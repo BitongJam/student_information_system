@@ -4,6 +4,7 @@
 
 venv/         # Ignore the 'venv' directory (Python virtual environment)
 node_modules/ # Ignore the 'node_modules' directory (for Node.js projects)
+/node_modules
 
 # Ignore Python bytecode files
 *.pyc
