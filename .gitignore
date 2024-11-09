@@ -1,0 +1,24 @@
+*.log         # Ignore all .log files
+*.pyc         # Ignore all .pyc (compiled Python) files
+*.db          # Ignore database files (e.g., SQLite)
+
+venv/         # Ignore the 'venv' directory (Python virtual environment)
+node_modules/ # Ignore the 'node_modules' directory (for Node.js projects)
+
+# Ignore Python bytecode files
+*.pyc
+*.pyo
+__pycache__/
+
+# Ignore database files
+*.sqlite3
+
+# Ignore Django migrations
+*/migrations/
+
+# Ignore IDE/editor files
+.vscode/
+.idea/
+
+# Ignore log files
+*.log
