@@ -7,6 +7,30 @@
 {% block  content %}
 
 <h1><a href="/">Students List</a></h1>
+{% load form_filters %}
+
+<div class="bg-transparent p-5">
+
+    <div class="w-full max-w-xs justify-center mx-auto mb-2">
+        <h2>Create Student Profile</h2>
+    
+        <form method="post" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4   " action="{% url 'student_app:save' %}">
+            {% csrf_token %}
+            <div class="mb-4">
+                {{ form.fname.label_tag }}
+                {{ form.fname|add_class:"border rounded px-4 py-2 w-full text-gray-700" }}
+            </div>
+            <div class="mb-4">
+                {{ form.lname.label_tag }}
+                {{ form.lname|add_class:"border rounded px-4 py-2 w-full text-gray-700" }}
+            </div>
+            <button type="submit" class="btn" >Submit</button>
+        </form>
+    
+    </div>
+</div>
+
+
 
 
 <table>
